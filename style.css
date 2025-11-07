@@ -1,0 +1,163 @@
+body {
+  background-color: #0b0c2a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    
+    
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+p {
+    color: white;
+    font-size: medium;
+}
+
+form {
+    display:flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+input.form-control {
+  border-radius: 20px;
+}
+
+button.btn {
+  border-radius: 20px;
+}
+
+
+.current-weather {
+ background-image: url(./assets/images/bg-today-large.svg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center bottom;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ padding: 40px;
+ width: 100%;
+ border-radius: 20px;
+ 
+
+}
+
+.current-location {
+    text-align: center;
+}
+
+.current-city {
+    font-size: 28px;
+    font-weight: 700;
+    margin-block-end: 12px;
+}
+
+.current-date {
+    font-size: 18px;
+}
+
+.current-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.current-icon {
+    width: 50px;
+    height: auto;
+    
+}
+
+.current-temp {
+    font-size: 96px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.container {
+    display:flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
+
+.card-feel, .card-humidity, .card-wind, .card-precipitation {
+  background-color: #1c1f3f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.daily {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 15px;
+  margin: 30px auto;
+  
+}
+
+.daily .card {
+  background-color: #1c1f3f;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  height: auto;
+  text-align: center;
+}
+
+.hourly-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px auto;
+  align-self: flex-end;
+}
+
+.hourly-container div {
+  background-color: #1c1f3f;
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+  text-align: left;
+}
+
+.forcast-img {
+    height:auto;
+    width: 100px;
+}
+
+.hourly-container img {
+    height: 40px;
+    width: 40px;
+
+
+}
+
+.dropdown {
+    width: 100px;
+    background-color:#1c1f3f;
+    color: white;
+    border-radius: 4px;
+
+}
+
+
+
