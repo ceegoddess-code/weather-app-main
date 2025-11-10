@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Weather app</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
   <link href="style.css" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -24,17 +24,9 @@
     <header>
       <img src="assets/images/logo.svg" alt="logo">
       <select  class="dropdown"> 
-        <option value="units">Units</option>
-       <option> Switch to Imperial/Metric</option>
-        <option>Tempture</option>
-        <option>Celsius (°C)</option>
-        <option>Fahrenheit(°F) </option>
-        <option>Wind Speed</option>
-        <option>km/h</option>
-        <option>Mph</option>
-        <option>Precipitation</option>
-        <option>Millimeters</option>
-        <option>Inches</option>
+        <option value="metric">Celsius (C)</option>
+       <option value= "Imperial">Fahrenheit (F)</option>
+       
 
 
       </select>
@@ -60,7 +52,7 @@
 
   </div>
      <div class="current-info">
-    <img src="./assets/images/icon-sunny.webp" alt="sunnyday" >
+    <img class="current-icon"  src="assets/images/icon-sunny.webp" alt="sunnyday" >
   <div class="current-temp"> 20</div>
    
 </div>
@@ -71,7 +63,7 @@
   <div class="card-feel">
   <div class="card-body">
     Feels like
-    <p>18c</p>
+    <p id="feelsLike">18c</p>
   </div>
 </div>
   
@@ -79,7 +71,7 @@
   <div class="card-humidity">
   <div class="card-body">
     Humidity
-    <p>46%</p>
+    <p id="humidity">46%</p>
   </div>
 </div>
   
@@ -87,7 +79,7 @@
   <div class="card-wind">
   <div class="card-body">
     Wind
-    <p>4 km/h</p>
+    <p id="wind">4 km/h</p>
   </div>
 </div>
  
@@ -95,7 +87,7 @@
 <div class="card-precipitation">
   <div class="card-body">
     Precipitation
-    <p>0 mm</p>
+    <p id="precipitation">0 mm</p>
   </div>
 </div>
 </div>
@@ -178,7 +170,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Sierra Smith</a>.
   </div>
-  <script src="script.js"></script>
+  <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
